@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <div class="main__intro">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable.</p>
+    </div>
+
+    <div class="main__container">
+      <div class="main__container-trial">
+        <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+      </div>
+
+      <div class="main__container-form">
+        <div class="container__form-inputBox">
+          <input type="text" id="first-name" placeholder="First Name">
+          <p class="error hidden" id="emptyFirstName">First Name cannot be empty</p>
+        </div>
+        
+        <div class="container__form-inputBox">
+          <input type="text" id="last-name" placeholder="Last Name">
+          <p class="error hidden"  id="emptyLastName">Last Name cannot be empty</p>
+        </div>
+        
+        <div class="container__form-inputBox">
+          <input type="email" id="email" placeholder="Email Address">
+          <p class="error hidden" id="invalidEmail">Enter a valid email</p>
+        </div>
+
+        <div class="container__form-inputBox">
+          <input type="password" id="password" placeholder="Password">
+          <p class="error hidden" id="invalidPass">Password must be alphanumeric with minimum 8 charecters</p>
+        </div>
+        
+        <button class="container__form-submitButton">Claim your free trial</button>
+        <p class="container__form-terms">
+          By clicking the button, you are agreeing to our 
+          <strong>Terms and Services</strong>
+        </p>
+        <div class="container__form-claimed hidden">
+          <img src="images/check.png" alt="check image">
+          <p>You claimed your free trial!</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <a href="https://www.flaticon.com/free-icons/correct" title="correct icons">Correct icons created by Pixel perfect - Flaticon</a>
+  <script src="main.js"></script>
+</body>
+</html>
